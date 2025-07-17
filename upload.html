@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Upload to PlugHub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submit Your Video to PlugHub</title>
   <style>
     body {
       background-color: #000;
@@ -15,134 +15,120 @@
     }
 
     header {
-      background: linear-gradient(135deg, #111, #1a1a1a);
-      padding: 50px 20px;
-      border-bottom: 2px solid #00ffe0;
+      padding: 40px 20px;
     }
 
     h1 {
-      font-size: 42px;
+      font-size: 36px;
       color: #00ffe0;
-      margin-bottom: 10px;
     }
 
     p {
       font-size: 18px;
       color: #ccc;
+      max-width: 700px;
+      margin: 10px auto;
     }
 
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: 0 auto;
+    .section {
+      padding: 30px 15px;
+      border-top: 1px solid #222;
+    }
+
+    .section h2 {
+      color: #00ffe0;
+      margin-bottom: 15px;
+    }
+
+    .video-thumbnail {
+      width: 100%;
+      max-width: 360px;
+      margin: 10px auto;
+      display: block;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #00ffe0;
     }
 
     iframe {
       width: 100%;
+      max-width: 360px;
+      height: 200px;
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .form-section iframe {
+      width: 100%;
       height: 800px;
       border: none;
-      border-radius: 12px;
-      background-color: #fff;
-    }
-
-    .back-button {
-      display: inline-block;
-      margin: 30px auto;
-      background-color: #00ffe0;
-      color: #000;
-      padding: 12px 24px;
-      font-weight: bold;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: 0.3s ease;
-    }
-
-    .back-button:hover {
-      background-color: #00ccb0;
-    }
-
-    .video-embed {
-      width: 100%;
-      max-width: 640px;
-      height: 360px;
-      margin: 20px auto;
-      border-radius: 10px;
-    }
-
-    .social-links a {
-      color: #00ffe0;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
     }
 
     footer {
-      margin-top: 60px;
-      padding: 20px;
+      padding: 40px 20px;
       font-size: 14px;
-      color: #666;
-      background-color: #111;
+      color: #aaa;
       border-top: 1px solid #222;
+    }
+
+    a {
+      color: #00ffe0;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
-
 <body>
+
   <header>
     <h1>🎥 Submit Your YouTube Video</h1>
     <p>Be featured on PlugHub — where creators stream, earn, and shine with VetsCoin (VTX).</p>
   </header>
 
-  <section>
-    <h2 style="color:#00ffe0;">What to Upload:</h2>
-    <p>✅ Music Videos • 🔊 Freestyles • 🎤 Live Performances • 💬 Message to the Community</p>
+  <div class="section">
+    <h2>What to Upload:</h2>
+    <p>✅ Music Videos • 🎤 Freestyles • 🎙️ Live Performances • 💬 Message to the Community</p>
+  </div>
 
-    <h2 style="color:#00ffe0;">How It Works:</h2>
+  <div class="section">
+    <h2>How It Works:</h2>
     <p>Fill out the form below. We review videos weekly and highlight selected creators on PlugHub.</p>
-  </section>
+  </div>
 
-  <section>
-    <h2 style="color:#00ffe0;">🔥 Featured Example</h2>
-    <div class="video-embed">
-      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Mk3-pVqyld0" 
-        title="PlugHub Example Video" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
-    </div>
-  </section>
+  <div class="section">
+    <h2>🔥 Featured Example</h2>
 
-  <section>
-    <h2 style="color:#00ffe0;">💸 Why PlugHub Uses VetsCoin (VTX)</h2>
-    <p>VTX is a community crypto built to reward creators, support veterans, and power platforms like PlugHub. When you submit content, you’re not just uploading — you’re becoming part of the movement.</p>
-  </section>
+    <!-- Featured Video 1 -->
+    <iframe src="https://www.youtube.com/embed/Mk3-pVqyld0?si=WZp3UK91KNVpkX5S" title="YouTube video player" allowfullscreen></iframe>
 
-  <section>
-    <h2 style="color:#00ffe0;">📬 Submit Your Video</h2>
-    <iframe 
-      src="https://docs.google.com/forms/d/e/1FAIpQLSeJqThUZzuzef99eJYH_54KQBbXdHYZepeon7VLejmSHBxGig/viewform?embedded=true" 
-      loading="lazy">
-      Loading…
-    </iframe>
-  </section>
+    <!-- Featured Video 2 -->
+    <iframe src="https://www.youtube.com/embed/Va5P_TfbjK8?si=Rp9FaqJkjvFMJyKX" title="YouTube video player" allowfullscreen></iframe>
+  </div>
 
-  <section>
-    <h2 style="color:#00ffe0;">📢 What Creators Are Saying</h2>
+  <div class="section form-section">
+    <h2>📩 Submit Your Video</h2>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeJqThUZzuzef99eJYH_54KQBbXdHYZepeon7VLejmSHBxGig/viewform?embedded=true" loading="lazy"></iframe>
+  </div>
+
+  <div class="section">
+    <h2>📣 What Creators Are Saying</h2>
     <p>"I dropped my first video here and already connected with new fans and artists!" – @_RealMike</p>
     <p>"This platform actually supports the people behind the art. That’s different." – @DJNova</p>
-  </section>
-
-  <section class="social-links">
-    <h2 style="color:#00ffe0;">🔗 Stay Connected</h2>
-    <p>
-      <a href="https://instagram.com/ak1stop" target="_blank">Instagram</a> |
-      <a href="https://x.com/ak1stop" target="_blank">X (Twitter)</a> |
-      <a href="index.html">Back to PlugHub Home</a>
-    </p>
-  </section>
+  </div>
 
   <footer>
+    <h2>🔗 Stay Connected</h2>
+    <p>
+      <a href="#">Instagram</a> |
+      <a href="#">X (Twitter)</a> |
+      <a href="#">Back to PlugHub Home</a>
+    </p>
     <p>Powered by Ak1Stop • PlugHub • VetsCoin</p>
   </footer>
+
 </body>
 </html>
