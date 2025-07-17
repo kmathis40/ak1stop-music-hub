@@ -1,86 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Claim VetsCoin (VTX)</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claim VTX – Official Airdrop Page</title>
   <style>
     body {
-      background-color: #000;
-      color: #00ffe5;
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 20px;
+      margin: 0;
+      background-color: #0f0f0f;
+      color: #f2f2f2;
+      padding-bottom: 80px;
     }
-    header img {
-      max-width: 250px;
-      margin-bottom: 20px;
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .logo {
+      width: 220px;
+      display: block;
+      margin: 20px auto;
     }
     h1 {
-      font-size: 32px;
+      text-align: center;
+      color: #00ff99;
     }
     .step {
-      margin: 30px 0;
+      font-weight: bold;
+      margin-top: 30px;
+      font-size: 18px;
+      color: #ffffff;
     }
-    .btn {
-      background-color: #00ffe5;
-      color: #000;
-      padding: 12px 24px;
-      border: none;
+    .contract-box {
+      background-color: #1a1a1a;
+      padding: 16px;
       border-radius: 8px;
-      font-size: 16px;
       margin-top: 10px;
-      text-decoration: none;
-      display: inline-block;
-      font-weight: bold;
+      overflow-wrap: break-word;
     }
-    iframe, video {
-      width: 100%;
-      max-width: 600px;
+    .button-row {
+      margin-top: 10px;
+    }
+    button {
+      margin-right: 10px;
+      padding: 10px 14px;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #00ff99;
       border: none;
-      margin-top: 20px;
+      border-radius: 6px;
     }
-    .floating-help {
+    iframe {
+      border: none;
+      width: 100%;
+      border-radius: 6px;
+      margin-top: 12px;
+    }
+    .help-button {
       position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #00ffe5;
-      color: black;
-      padding: 12px 18px;
-      border-radius: 30px;
+      bottom: 16px;
+      right: 16px;
+      background-color: #00ff99;
+      color: #000;
+      border-radius: 50px;
+      padding: 12px 20px;
       font-weight: bold;
       text-decoration: none;
-      box-shadow: 0 0 10px #00ffe5;
-      z-index: 999;
+      box-shadow: 0 0 10px #00ff99;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="https://i.ibb.co/wYV8mCH/vetscoin-ak1stop-logo.png" alt="Ak1STOP VetsCoin Logo"/>
-  </header>
+  <div class="container">
 
-  <h1>Claim Your VetsCoin (VTX)</h1>
-  <p>Support the movement. Claim your airdrop today.</p>
+    <!-- Logo -->
+    <img src="https://ak1stop.cloud/vtxlogo.png" alt="VetsCoin Logo" class="logo">
 
-  <div class="step">
-    <h2>🎥 Step 0: Watch First</h2>
-    <video controls poster="https://imgbb.com/placeholder.png">
-      <source src="https://drive.google.com/uc?export=download&id=1-yrmtZ7nU4x8VDkOFCuFGnZIKJqf_oG5" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <h1>Claim Your VTX Airdrop</h1>
+
+    <!-- Step 0: Video -->
+    <div class="step">🎥 Step 0: Watch First</div>
+    <iframe src="https://drive.google.com/file/d/175bMN939bCL1ZnLlV1P_R9h0XFpy6Zzl/preview" height="360" allow="autoplay"></iframe>
+
+    <!-- Step 1: Trust Wallet Info -->
+    <div class="step">🪙 Step 1: Add VetsCoin (VTX) to Your Wallet</div>
+    <div class="contract-box">
+      Contract: 0x7AEDCeE86B646635C1d7d3ABA19eC569502C17cF
+    </div>
+    <div class="button-row">
+      <button onclick="copyContract()">📋 Copy Contract</button>
+      <button onclick="openTrustWallet()">📱 Open Trust Wallet</button>
+    </div>
+
+    <!-- Step 2: Claim Form -->
+    <div class="step">📝 Step 2: Submit Your Claim</div>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSctSxF4OHse67kvp5OGiU9Cq1iWjajNMsGZwe6RiUahhtE7XA/viewform?embedded=true" height="800">Loading…</iframe>
   </div>
 
-  <div class="step">
-    <h2>🪙 Step 1: Add VTX to Trust Wallet</h2>
-    <a class="btn" href="https://link.trustwallet.com/add_token?address=0x7AEDCeE86B646635C1d7d3ABA19eC569502C17cF&symbol=VTX&decimals=18&type=token">Add VTX to Trust Wallet</a>
-  </div>
+  <!-- Floating Help Button -->
+  <a class="help-button" href="https://voice.google.com/u/0/calls?a=nc,%2B18136665708" target="_blank">💬 Need Help?</a>
 
-  <div class="step">
-    <h2>✉️ Step 2: Fill Out the Claim Form</h2>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSctSxF4OHse67kvp5OGiU9Cq1iWjajNMsGZwe6RiUahhtE7XA/viewform?embedded=true" height="1000" loading="lazy">Loading…</iframe>
-  </div>
+  <footer>
+    © 2025 Ak1Stop LLC | VetsCoin (VTX) is a community token. Not financial advice.
+  </footer>
 
-  <a href="sms:+18136665708" class="floating-help">💬 Help?</a>
+  <script>
+    function copyContract() {
+      const contract = "0x7AEDCeE86B646635C1d7d3ABA19eC569502C17cF";
+      navigator.clipboard.writeText(contract).then(() => {
+        alert("Contract copied to clipboard!");
+      });
+    }
+    function openTrustWallet() {
+      window.open("https://link.trustwallet.com/open_url?coin_id=2000&url=https://polygonscan.com/token/0x7AEDCeE86B646635C1d7d3ABA19eC569502C17cF", "_blank");
+    }
+  </script>
 </body>
 </html>
