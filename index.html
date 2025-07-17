@@ -2,21 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Index</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlugHub | Ak1Stop Music Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background: #111;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      color: #00ffe0;
+    }
+    p {
+      color: #aaa;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .btn-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    a.button {
+      background: #00ffe0;
+      color: #000;
+      text-decoration: none;
+      padding: 15px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 18px;
+      transition: background 0.2s ease;
+    }
+    a.button:hover {
+      background: #00bfa6;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="claim.html">Claim VTX</a> |
-    <a href="upload.html">CreatorSpace</a> |
-    <a href="stream.html">StreamLook</a> |
-    <a href="earn.html">Earn & Burn</a>
-  </nav>
-  <div class="container">
-<h1>Welcome to Ak1Stop PlugHub</h1><p>Tap in, upload, and get rewarded with VetsCoin.</p>
+
+  <header>
+    <h1>PlugHub</h1>
+    <p>Where the music hits, the coin flips, and the creators get paid.</p>
+  </header>
+
+  <div class="btn-grid">
+    <a class="button" href="claim.html">🎯 Claim Your VTX</a>
+    <a class="button" href="upload.html">📤 Upload Your Track</a>
+    <a class="button" href="stream.html">🎧 Stream Community Vibes</a>
+    <a class="button" href="earn.html">💸 Earn & Burn Rewards</a>
   </div>
-  <script src="script.js"></script>
+
+  <footer>
+    Powered by Ak1Stop • VetsCoin • Built for the Underdogs
+  </footer>
+
 </body>
 </html>
