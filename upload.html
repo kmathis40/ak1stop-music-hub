@@ -43,6 +43,23 @@
       height: 800px;
       border: none;
       border-radius: 12px;
+      background-color: #fff;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 30px;
+      background-color: #00ffe0;
+      color: #000;
+      padding: 12px 24px;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #00ccb0;
     }
 
     footer {
@@ -58,14 +75,15 @@
 
 <body>
   <header>
-    <h1>Upload Your YouTube Video</h1>
-    <p class="tagline">Be featured on PlugHub — where creators stream, earn, and shine with VetsCoin.</p>
+    <h1>🎥 Submit Your YouTube Video</h1>
+    <p class="tagline">
+      Upload your music, content, or message and get featured on PlugHub — where creators stream, earn, and shine with VetsCoin.
+    </p>
   </header>
 
   <main>
-    <h2 style="color:#00ffe0; margin-bottom: 10px;">🎥 Submit Your YouTube Video</h2>
-    <p style="color:#ccc; margin-bottom: 30px;">
-      Drop your YouTube link, artist name, and contact info below. We review uploads weekly and feature the best on PlugHub.
+    <p style="color:#ccc; font-size: 18px; margin-bottom: 30px;">
+      We review submissions weekly and highlight the dopest uploads from the community. Submit below to join the movement.
     </p>
 
     <iframe 
@@ -73,6 +91,8 @@
       loading="lazy">
       Loading…
     </iframe>
+
+    <a href="index.html" class="back-button">⬅ Back to PlugHub Home</a>
   </main>
 
   <footer>
