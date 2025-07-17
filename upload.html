@@ -17,6 +17,7 @@
     header {
       background: linear-gradient(135deg, #111, #1a1a1a);
       padding: 50px 20px;
+      border-bottom: 2px solid #00ffe0;
     }
 
     h1 {
@@ -25,14 +26,15 @@
       margin-bottom: 10px;
     }
 
-    p {
+    p.tagline {
       font-size: 18px;
       color: #ccc;
+      margin: 0;
     }
 
-    section {
-      padding: 30px 20px;
-      max-width: 800px;
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
       margin: 0 auto;
     }
 
@@ -40,13 +42,16 @@
       width: 100%;
       height: 800px;
       border: none;
-      border-radius: 8px;
+      border-radius: 12px;
     }
 
     footer {
+      margin-top: 60px;
       padding: 20px;
       font-size: 14px;
       color: #666;
+      background-color: #111;
+      border-top: 1px solid #222;
     }
   </style>
 </head>
@@ -54,14 +59,21 @@
 <body>
   <header>
     <h1>Upload Your YouTube Video</h1>
-    <p>Be featured on PlugHub — where creators earn, stream, and shine.</p>
+    <p class="tagline">Be featured on PlugHub — where creators stream, earn, and shine with VetsCoin.</p>
   </header>
 
-  <section>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSctSxF4OHse67kvp5OGiU9Cq1iWjajNMsGZwe6RiUahhtE7XA/viewform?embedded=true" loading="lazy">
+  <main>
+    <h2 style="color:#00ffe0; margin-bottom: 10px;">🎥 Submit Your YouTube Video</h2>
+    <p style="color:#ccc; margin-bottom: 30px;">
+      Drop your YouTube link, artist name, and contact info below. We review uploads weekly and feature the best on PlugHub.
+    </p>
+
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSeJqThUZzuzef99eJYH_54KQBbXdHYZepeon7VLejmSHBxGig/viewform?embedded=true" 
+      loading="lazy">
       Loading…
     </iframe>
-  </section>
+  </main>
 
   <footer>
     <p>Powered by Ak1Stop • PlugHub • VetsCoin</p>
