@@ -1,7 +1,17 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".button");
 
-function connectWallet() {
-  alert("Connect wallet feature coming soon.");
-}
-function claimVTX() {
-  alert("Claim VTX function will interact with the blockchain.");
-}
+  buttons.forEach((button) => {
+    button.addEventListener("mouseover", () => {
+      button.style.opacity = "0.8";
+    });
+
+    button.addEventListener("mouseout", () => {
+      button.style.opacity = "1";
+    });
+
+    button.addEventListener("click", () => {
+      alert(`You clicked on: ${button.textContent.trim()}`);
+    });
+  });
+});
