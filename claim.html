@@ -2,76 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>🎖️ Claim Your VTX – Powered by Ak1Stop</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: url('https://ak1stop-files.s3.amazonaws.com/vtx-crypto-military-bg.jpg') no-repeat center center fixed;
-      background-size: cover;
+      background-color: #0b0b0b;
       color: white;
     }
+
     .container {
-      background-color: rgba(0, 0, 0, 0.85);
       max-width: 800px;
       margin: 2rem auto;
       padding: 2rem;
+      background-color: #1a1a1a;
       border-radius: 12px;
     }
-    h1 {
+
+    h1, h2 {
       text-align: center;
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
     }
+
     .step {
-      background-color: #222;
-      border-left: 5px solid #00cc88;
-      border-radius: 10px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      background-color: #2a2a2a;
+      padding: 1rem;
+      border-left: 5px solid #00ff88;
+      border-radius: 8px;
     }
-    .step h2 {
-      margin-top: 0;
-      font-size: 1.4rem;
-    }
-    .button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 12px 20px;
-      background-color: #00cc88;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
+
+    .step button {
+      background-color: #00ff88;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
       border-radius: 6px;
+      font-weight: bold;
+      margin-top: 1rem;
+      cursor: pointer;
     }
+
     iframe {
       width: 100%;
-      height: 500px;
+      height: 315px;
       border: none;
-      border-radius: 10px;
-      margin-top: 1rem;
+      margin-top: 10px;
     }
-    .chat-button {
+
+    .chat-btn {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: #00ccff;
-      color: #fff;
-      padding: 12px 16px;
-      border-radius: 20px;
-      font-weight: bold;
+      background-color: #00ff88;
+      color: #000;
+      padding: 12px 20px;
+      border-radius: 30px;
       text-decoration: none;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    }
-    @media (max-width: 600px) {
-      .container {
-        margin: 1rem;
-        padding: 1rem;
-      }
-      iframe {
-        height: 400px;
-      }
+      font-weight: bold;
     }
   </style>
 </head>
@@ -82,30 +70,31 @@
     <div class="step">
       <h2>Step 1: Set Up Trust Wallet</h2>
       <p>Make sure you have a Trust Wallet set to the Polygon Network.</p>
-      <p><strong>VTX Token Contract:</strong><br>
-        0x7AEDCeE86B646635C1d7d3ABA19eC569502C17cF</p>
-      <a class="button" href="https://link.trustwallet.com/add_token?address=0x7AEDCeE86B646635C1d7d3ABA19eC569502C17cF&network=polygon" target="_blank">
-        Open in Trust Wallet
+      <p><strong>VTX Token Contract:</strong><br>0x7AEDCeE86B646635C1d7d3ABA19eC569502C17cF</p>
+      <a href="https://link.trustwallet.com" target="_blank">
+        <button>Open in Trust Wallet</button>
       </a>
     </div>
 
     <div class="step">
       <h2>Step 2: Watch This First</h2>
-      <iframe src="https://drive.google.com/file/d/175bMN939bCL1ZnLlV1P_R9h0XFpy6Zzl/preview" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
     </div>
 
     <div class="step">
       <h2>Step 3: Submit the Claim Form</h2>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdxz0QfUSY9Kqwnb2A0azQbaS98QJ0ADrfMxKJYeUUbBBbfUw/viewform?embedded=true" allowfullscreen>Loading…</iframe>
+      <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" width="100%" height="600" frameborder="0">Loading…</iframe>
     </div>
 
     <div class="step">
       <h2>Step 4: Share with Friends</h2>
       <p>Earn bonus VTX for every verified referral. Share your Trust Wallet address and let your friends know about VetsCoin!</p>
-      <a class="button" href="https://ak1stop.cloud/vtx-referral" target="_blank">Referral Bonus Info</a>
+      <a href="https://your-referral-info-page.com" target="_blank">
+        <button>Referral Bonus Info</button>
+      </a>
     </div>
   </div>
 
-  <a class="chat-button" href="sms:+18136665708">💬 Need Help?</a>
+  <a class="chat-btn" href="sms:+18136665708">💬 Need Help?</a>
 </body>
 </html>
