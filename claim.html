@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Claim VetsCoin (VTX)</title>
   <style>
     body {
@@ -41,70 +41,47 @@
       background: #00ffe5;
       color: black;
       padding: 10px 15px;
-      border-radius: 50px;
+      border-radius: 25px;
       font-weight: bold;
+      text-decoration: none;
       box-shadow: 0 0 10px #00ffe5;
+      z-index: 999;
     }
 
     iframe {
-      border: none;
       width: 100%;
       max-width: 600px;
-      height: 700px;
+      height: 900px;
+      border: none;
+      border-radius: 12px;
     }
 
     .logo {
-      width: 150px;
+      width: 180px;
       margin-bottom: 20px;
-    }
-
-    video {
-      width: 90%;
-      max-width: 500px;
-      margin-top: 20px;
-      border-radius: 10px;
     }
   </style>
 </head>
-
 <body>
 
-  <img class="logo" src="/assets/vetscoin-logo.png" alt="Ak1Stop Logo" />
+  <img src="https://i.ibb.co/vqK1BLS/vetscoin-logo-ak1stop.png" alt="Ak1Stop VetsCoin Logo" class="logo" />
 
   <h1>Claim Your VetsCoin (VTX)</h1>
   <p>Support the movement. Claim your airdrop today.</p>
 
   <div class="step">
-    <h2>🎬 Step 0: Watch First</h2>
-    <video controls poster="/assets/vtx-thumb.jpg">
-      <source src="https://drive.google.com/uc?export=download&id=1-yrmtZ7nU4x8VDkOFCuFGnZIKJqf_oG5" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <h2>🪙 Step 1: Add VTX to Trust Wallet</h2>
+    <a class="btn" href="https://link.trustwallet.com/open_url?coin_id=2009&url=https://polygonscan.com/token/0x7AEDCeE86B646635C1d7d3ABA19eC569502C17cF" target="_blank">
+      Add VTX to Trust Wallet
+    </a>
   </div>
 
   <div class="step">
-    <h2>🔐 Step 1: Set Up Your Wallet</h2>
-    <a href="https://trustwallet.com/download" target="_blank" class="btn">Download Trust Wallet</a>
-    <p>Make sure your wallet is on the <strong>Polygon</strong> network.</p>
+    <h2>📩 Step 2: Fill Out the Claim Form</h2>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSctSxF4OHse67kvp5OGiU9Cq1iWjajNMsGZwe6RiUahhtE7XA/viewform?embedded=true" loading="lazy"></iframe>
   </div>
 
-  <div class="step">
-    <h2>📩 Step 2: Add VTX Token</h2>
-    <p>Add this contract address:</p>
-    <code style="color: white;">0x7AEDCeE86B646635C1d7d3ABA19eC569502C17cF</code>
-  </div>
-
-  <div class="step">
-    <h2>📝 Step 3: Submit the Claim Form</h2>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSctSxF4OHse67kvp5OGiU9Cq1iWjajNMsGZwe6RiUahhtE7XA/viewform?embedded=true">Loading…</iframe>
-  </div>
-
-  <div class="step">
-    <h2>📞 Need Help?</h2>
-    <p>Text us at <a href="sms:+18136665708" style="color: #00ffe5;">1-813-666-5708</a></p>
-  </div>
-
-  <a class="floating-help" href="sms:+18136665708">💬 Help?</a>
+  <a class="floating-help" href="sms:+18136665708" target="_blank">💬 Help?</a>
 
 </body>
 </html>
