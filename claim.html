@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Claim Your VTX – Powered by Ak1Stop</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claim Your VTX – Powered by Ak1Stop</title>
   <style>
     body {
       background-color: #0b0b0b;
@@ -12,94 +12,83 @@
       margin: 0;
       padding: 0;
     }
+
     .container {
       padding: 2rem;
       max-width: 800px;
       margin: auto;
     }
+
     h1, h2 {
       color: #00ffcc;
       text-align: center;
     }
+
     p {
       color: #ccc;
       text-align: center;
     }
-    button {
+
+    .step {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background-color: #1a1a1a;
+      border-radius: 10px;
+    }
+
+    .btn {
+      display: block;
+      width: fit-content;
+      margin: 1rem auto;
+      padding: 12px 24px;
       background-color: #00ffcc;
-      color: black;
-      padding: 12px 20px;
+      color: #000;
+      font-weight: bold;
       border: none;
-      border-radius: 6px;
-      font-size: 16px;
+      border-radius: 8px;
+      text-decoration: none;
       cursor: pointer;
     }
-    .step {
-      background-color: #111;
-      padding: 1.5rem;
-      margin: 1.5rem 0;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,255,204,0.1);
-    }
+
     iframe {
+      display: block;
       width: 100%;
+      height: 900px;
       border: none;
       border-radius: 8px;
     }
-    .help-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #00ffcc;
-      color: black;
-      padding: 12px 16px;
-      border-radius: 25px;
-      font-weight: bold;
-      box-shadow: 0 0 10px #00ffcc;
-      z-index: 100;
+
+    .guide-button {
+      text-align: center;
+      margin-top: 1.5rem;
     }
   </style>
 </head>
 <body>
-
   <div class="container">
     <h1>Claim Your VetsCoin (VTX)</h1>
     <p>Support the movement. Claim your airdrop today.</p>
 
-    <!-- Step 1: Watch This First -->
     <div class="step">
-      <h2>🎥 Step 1: Watch This First</h2>
-      <iframe src="https://drive.google.com/file/d/175bMN939bCL1ZnLlV1P_R9h0XFpy6Zzl/preview" height="315" allowfullscreen></iframe>
-    </div>
-
-    <!-- Step 2: Add VTX to Trust Wallet -->
-    <div class="step">
-      <h2>🪙 Step 2: Add VTX to Trust Wallet</h2>
-      <p><strong>VTX Token Contract:</strong><br>
-      0x7AEDCeE86B646635C1d7d3ABA19eC569502C17cF</p>
-      <a href="https://link.trustwallet.com/add-token?network=polygon&address=0x7AEDCeE86B646635C1d7d3ABA19eC569502C17cF" target="_blank">
-        <button>Add VTX to Trust Wallet</button>
+      <h2>🌕 Step 1: Add VTX to Trust Wallet</h2>
+      <a class="btn" href="https://link.trustwallet.com/add_token?address=0x7AEDCeE86B646635C1d7d3ABA19eC569502C17cF&symbol=VTX&decimals=18&type=polygon" target="_blank">
+        Add VTX to Trust Wallet
       </a>
     </div>
 
-    <!-- Step 3: Fill Out the Claim Form -->
     <div class="step">
-      <h2>📝 Step 3: Fill Out the Claim Form</h2>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSctSxF4OHse67kvp5OGiU9Cq1iWjajNMsGZwe6RiUahhtE7XA/viewform?embedded=true" height="800">Loading…</iframe>
-    </div>
+      <h2>📩 Step 2: Fill Out the Claim Form</h2>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSctSxF4OHse67kvp5OGiU9Cq1iWjajNMsGZwe6RiUahhtE7XA/viewform?embedded=true" 
+              frameborder="0" 
+              marginheight="0" 
+              marginwidth="0">Loading…</iframe>
 
-    <!-- Step 4: Share with Friends -->
-    <div class="step">
-      <h2>📣 Step 4: Share with Friends</h2>
-      <p>Earn bonus VTX for every verified referral. Share your Trust Wallet address and let your friends know about VetsCoin!</p>
-      <a href="https://ak1stop.cloud/referral" target="_blank">
-        <button>Referral Bonus Info</button>
-      </a>
+      <div class="guide-button">
+        <a class="btn" href="https://docs.google.com/document/d/1HHWjtKNlYZqy3WQUvWx0Levrye11rRyu51iA5LXSjfM/edit?usp=drivesdk" target="_blank">
+          📘 Read the Full Guide for Step 2
+        </a>
+      </div>
     </div>
   </div>
-
-  <!-- Help Button -->
-  <a href="sms:18136665708" class="help-button">💬 Help?</a>
-
 </body>
 </html>
