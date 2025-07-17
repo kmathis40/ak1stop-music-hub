@@ -13,124 +13,112 @@
       padding: 0;
       text-align: center;
     }
-
     header {
       padding: 20px;
       background-color: #111;
     }
-
     header img {
       max-width: 200px;
       margin-bottom: 10px;
     }
-
     h1 {
       color: #00ffd0;
       margin-top: 0;
     }
-
     h2 {
       color: #0ff;
     }
-
     .section {
       padding: 30px 15px;
     }
-
-    .contract {
-      font-family: monospace;
-      background: #222;
-      padding: 10px 15px;
-      border-radius: 5px;
-      margin: 10px auto;
-      display: inline-block;
-      word-wrap: break-word;
-    }
-
     .btn {
       background-color: #00ffd0;
+      border: none;
       color: #000;
-      padding: 12px 24px;
-      font-size: 16px;
-      text-decoration: none;
+      padding: 12px 25px;
+      font-size: 18px;
       border-radius: 8px;
-      display: inline-block;
-      margin-top: 12px;
-    }
-
-    .btn:hover {
-      background-color: #0cf;
-    }
-
-    iframe {
-      border-radius: 12px;
+      cursor: pointer;
       margin-top: 10px;
-      width: 100%;
-      max-width: 560px;
-      height: 315px;
     }
-
+    .contract-box {
+      background-color: #222;
+      padding: 12px;
+      border-radius: 5px;
+      font-family: monospace;
+      margin-top: 8px;
+      color: #0ff;
+    }
+    iframe {
+      width: 90%;
+      height: 800px;
+      border: none;
+      border-radius: 10px;
+    }
     .chat-float {
       position: fixed;
       bottom: 20px;
       right: 20px;
       background-color: #00ffd0;
-      color: black;
-      padding: 12px 20px;
-      border-radius: 50px;
-      text-decoration: none;
+      color: #000;
+      padding: 12px 18px;
+      border-radius: 25px;
       font-weight: bold;
-      box-shadow: 0 0 10px #0ff;
+      box-shadow: 0 0 15px #00ffd0;
+      cursor: pointer;
       z-index: 999;
-    }
-
-    footer {
-      font-size: 14px;
-      color: #666;
-      margin-top: 40px;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="https://ak1stop.com/wp-content/uploads/2024/06/VetsCoin-Logo-Small.png" alt="VetsCoin Logo">
+    <img src="https://i.ibb.co/wM1dYyb/vtx-logo.png" alt="VTX Logo" />
     <h1>Claim Your VetsCoin (VTX)</h1>
     <p>Support the movement. Claim your airdrop today.</p>
   </header>
 
   <div class="section">
     <h2>🎥 Step 0: Watch First</h2>
-    <iframe src="https://drive.google.com/file/d/175bMN939bCL1ZnLlV1P_R9h0XFpy6Zzl/preview" allow="autoplay"></iframe>
+    <video width="300" controls poster="https://i.ibb.co/3N4DDhK/vtx-welcome-poster.jpg">
+      <source src="https://drive.google.com/uc?export=download&id=175bMN939bCL1ZnLlV1P_R9h0XFpy6Zzl" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
 
   <div class="section">
     <h2>🔐 Step 1: Set Up Your Wallet</h2>
-    <a href="https://trustwallet.com/download" target="_blank" class="btn">Download Trust Wallet</a>
+    <a class="btn" href="https://trustwallet.com/download" target="_blank">Download Trust Wallet</a>
     <p>Make sure your wallet is on the <strong>Polygon</strong> network.</p>
   </div>
 
   <div class="section">
     <h2>📩 Step 2: Add VTX Token</h2>
     <p>Add this contract address:</p>
-    <div class="contract">0x7AEDCeE86B646635C1d7d3ABA19eC569502C17cF</div>
+    <div class="contract-box" onclick="copyToClipboard()">0x7AEDCeE86B646635C1d7d3ABA19eC569502C17cF</div>
   </div>
 
   <div class="section">
     <h2>📝 Step 3: Submit the Claim Form</h2>
-    <a href="https://forms.gle/CnktLg3wCQMyEs5c8" target="_blank" class="btn">Submit Now</a>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdwQaY_1Dfx_9gKYoB6jz8x5e6lARCuB5l57NLZaEV4CTzIdQ/viewform?embedded=true">Loading…</iframe>
   </div>
 
   <div class="section">
     <h2>📞 Need Help?</h2>
-    <p>Text us at <strong>1-813-666-5708</strong></p>
+    <p>Text us at <a href="sms:1-813-666-5708">1-813-666-5708</a></p>
   </div>
 
-  <a href="sms:+18136665708" class="chat-float">💬 Help?</a>
+  <a href="sms:1-813-666-5708" class="chat-float">💬 Help?</a>
 
-  <footer>
-    &copy; 2025 Ak1Stop x VetsCoin. All rights reserved.
-  </footer>
+  <script>
+    function copyToClipboard() {
+      const contract = "0x7AEDCeE86B646635C1d7d3ABA19eC569502C17cF";
+      navigator.clipboard.writeText(contract).then(() => {
+        alert("Contract address copied!");
+      });
+    }
+  </script>
 
 </body>
 </html>
