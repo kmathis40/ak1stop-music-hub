@@ -1,94 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Claim Your VTX – Powered by Ak1Stop</title>
   <style>
     body {
-      background-color: #0b0b0b;
-      color: #00ffcc;
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
+      color: white;
     }
-
     .container {
-      padding: 2rem;
       max-width: 800px;
-      margin: auto;
-    }
-
-    h1, h2 {
-      color: #00ffcc;
-      text-align: center;
-    }
-
-    p {
-      color: #ccc;
-      text-align: center;
-    }
-
-    .step {
-      margin: 2rem 0;
-      padding: 1.5rem;
-      background-color: #1a1a1a;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #1c1c1c;
       border-radius: 10px;
     }
-
-    .btn {
-      display: block;
-      width: fit-content;
-      margin: 1rem auto;
-      padding: 12px 24px;
-      background-color: #00ffcc;
-      color: #000;
-      font-weight: bold;
-      border: none;
-      border-radius: 8px;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    iframe {
-      display: block;
-      width: 100%;
-      height: 900px;
-      border: none;
-      border-radius: 8px;
-    }
-
-    .guide-button {
+    h1 {
       text-align: center;
-      margin-top: 1.5rem;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .step {
+      background-color: #292929;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .step h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 12px 20px;
+      background-color: #00cc88;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+    .chat-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #00ccff;
+      color: #fff;
+      padding: 12px 16px;
+      border-radius: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    @media (max-width: 600px) {
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+      iframe {
+        height: 400px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Claim Your VetsCoin (VTX)</h1>
-    <p>Support the movement. Claim your airdrop today.</p>
+    <h1>🎖️ Claim Your VTX – Powered by Ak1Stop</h1>
 
     <div class="step">
-      <h2>🌕 Step 1: Add VTX to Trust Wallet</h2>
-      <a class="btn" href="https://link.trustwallet.com/add_token?address=0x7AEDCeE86B646635C1d7d3ABA19eC569502C17cF&symbol=VTX&decimals=18&type=polygon" target="_blank">
+      <h2>Step 1: Watch This Quick Video</h2>
+      <iframe src="https://drive.google.com/file/d/175bMN939bCL1ZnLlV1P_R9h0XFpy6Zzl/preview" allow="autoplay"></iframe>
+    </div>
+
+    <div class="step">
+      <h2>Step 2: Set Up Trust Wallet</h2>
+      <p>Make sure your Trust Wallet is on the Polygon Network and ready to receive VTX.</p>
+      <p><strong>VTX Token Contract:</strong><br>
+        0x7AEDCeE86B646635C1d7d3ABA19eC569502C17cF</p>
+      <a class="button" href="https://link.trustwallet.com/add_token?address=0x7AEDCeE86B646635C1d7d3ABA19eC569502C17cF&network=polygon" target="_blank">
         Add VTX to Trust Wallet
       </a>
     </div>
 
     <div class="step">
-      <h2>📩 Step 2: Fill Out the Claim Form</h2>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSctSxF4OHse67kvp5OGiU9Cq1iWjajNMsGZwe6RiUahhtE7XA/viewform?embedded=true" 
-              frameborder="0" 
-              marginheight="0" 
-              marginwidth="0">Loading…</iframe>
+      <h2>Step 3: Submit the Claim Form</h2>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSctSxF4OHse67kvp5OGiU9Cq1iWjajNMsGZwe6RiUahhtE7XA/viewform?embedded=true">Loading…</iframe>
+    </div>
 
-      <div class="guide-button">
-        <a class="btn" href="https://docs.google.com/document/d/1HHWjtKNlYZqy3WQUvWx0Levrye11rRyu51iA5LXSjfM/edit?usp=drivesdk" target="_blank">
-          📘 Read the Full Guide for Step 2
-        </a>
-      </div>
+    <div class="step">
+      <h2>Step 4: Refer Friends, Get Bonuses</h2>
+      <p>Earn bonus VTX for every verified referral. Share your wallet address and invite friends to join the mission!</p>
+      <a class="button" href="https://ak1stop.cloud/vtx-referral" target="_blank">Referral Bonus Info</a>
     </div>
   </div>
+
+  <a class="chat-button" href="sms:+18136665708">💬 Need Help?</a>
 </body>
 </html>
