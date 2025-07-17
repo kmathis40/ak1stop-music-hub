@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Submit Your Video to PlugHub</title>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       background-color: #000;
       color: #fff;
@@ -30,6 +34,26 @@
       margin: 10px auto;
     }
 
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #000;
+      padding: 10px 0;
+      border-bottom: 1px solid #222;
+      z-index: 999;
+    }
+
+    nav a {
+      color: #00ffe0;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     .section {
       padding: 30px 15px;
       border-top: 1px solid #222;
@@ -40,28 +64,50 @@
       margin-bottom: 15px;
     }
 
-    .video-thumbnail {
-      width: 100%;
-      max-width: 360px;
-      margin: 10px auto;
-      display: block;
-      border-radius: 8px;
-      box-shadow: 0 0 10px #00ffe0;
+    .video-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
     }
 
-    iframe {
-      width: 100%;
-      max-width: 360px;
-      height: 200px;
-      border: none;
+    .video-card {
+      width: 320px;
+      background-color: #111;
+      padding: 15px;
       border-radius: 10px;
-      margin-bottom: 20px;
+      text-align: center;
     }
 
-    .form-section iframe {
+    .video-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .video-card p {
+      margin: 10px 0;
+    }
+
+    .watch-btn {
+      display: inline-block;
+      background-color: #00ffe0;
+      color: #000;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .watch-btn:hover {
+      background-color: #00ccb0;
+    }
+
+    iframe.form {
       width: 100%;
       height: 800px;
       border: none;
+      border-radius: 10px;
     }
 
     footer {
@@ -74,7 +120,6 @@
     a {
       color: #00ffe0;
       text-decoration: none;
-      margin: 0 10px;
     }
 
     a:hover {
@@ -82,39 +127,48 @@
     }
   </style>
 </head>
-<body>
+
+<body id="top">
 
   <header>
     <h1>🎥 Submit Your YouTube Video</h1>
     <p>Be featured on PlugHub — where creators stream, earn, and shine with VetsCoin (VTX).</p>
   </header>
 
-  <div class="section">
-    <h2>What to Upload:</h2>
-    <p>✅ Music Videos • 🎤 Freestyles • 🎙️ Live Performances • 💬 Message to the Community</p>
+  <!-- Sticky Navigation -->
+  <nav>
+    <a href="#featured">🎬 Featured</a>
+    <a href="#upload">📩 Submit</a>
+    <a href="#form">💬 Testimonials</a>
+  </nav>
+
+  <div class="section" id="featured">
+    <h2>🎬 Featured Submissions</h2>
+    <div class="video-grid">
+
+      <!-- Video 1 -->
+      <div class="video-card">
+        <img src="https://img.youtube.com/vi/Mk3-pVqyld0/hqdefault.jpg" alt="U Ain’t No Pimp" />
+        <p>🎵 “U Ain’t No Pimp”</p>
+        <a href="https://www.youtube.com/watch?v=Mk3-pVqyld0" target="_blank" class="watch-btn">▶️ Watch Now</a>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="video-card">
+        <img src="https://img.youtube.com/vi/Va5P_TfbjK8/hqdefault.jpg" alt="Visual Vibe" />
+        <p>🎥 “Visual Vibe”</p>
+        <a href="https://www.youtube.com/watch?v=Va5P_TfbjK8" target="_blank" class="watch-btn">▶️ Watch Now</a>
+      </div>
+
+    </div>
   </div>
 
-  <div class="section">
-    <h2>How It Works:</h2>
-    <p>Fill out the form below. We review videos weekly and highlight selected creators on PlugHub.</p>
-  </div>
-
-  <div class="section">
-    <h2>🔥 Featured Example</h2>
-
-    <!-- Featured Video 1 -->
-    <iframe src="https://www.youtube.com/embed/Mk3-pVqyld0?si=WZp3UK91KNVpkX5S" title="YouTube video player" allowfullscreen></iframe>
-
-    <!-- Featured Video 2 -->
-    <iframe src="https://www.youtube.com/embed/Va5P_TfbjK8?si=Rp9FaqJkjvFMJyKX" title="YouTube video player" allowfullscreen></iframe>
-  </div>
-
-  <div class="section form-section">
+  <div class="section" id="upload">
     <h2>📩 Submit Your Video</h2>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeJqThUZzuzef99eJYH_54KQBbXdHYZepeon7VLejmSHBxGig/viewform?embedded=true" loading="lazy"></iframe>
+    <iframe class="form" src="https://docs.google.com/forms/d/e/1FAIpQLSeJqThUZzuzef99eJYH_54KQBbXdHYZepeon7VLejmSHBxGig/viewform?embedded=true" loading="lazy">Loading…</iframe>
   </div>
 
-  <div class="section">
+  <div class="section" id="form">
     <h2>📣 What Creators Are Saying</h2>
     <p>"I dropped my first video here and already connected with new fans and artists!" – @_RealMike</p>
     <p>"This platform actually supports the people behind the art. That’s different." – @DJNova</p>
@@ -125,10 +179,22 @@
     <p>
       <a href="#">Instagram</a> |
       <a href="#">X (Twitter)</a> |
-      <a href="#">Back to PlugHub Home</a>
+      <a href="index.html">Back to PlugHub Home</a>
     </p>
     <p>Powered by Ak1Stop • PlugHub • VetsCoin</p>
   </footer>
+
+  <!-- Scroll to Top Button -->
+  <a href="#top" 
+     style="position: fixed; bottom: 80px; right: 20px; background-color: #00ffe0; color: #000; padding: 10px 18px; border-radius: 30px; font-weight: bold; text-decoration: none; box-shadow: 0 0 10px #00ffe0; z-index: 999;">
+     ⬆️ Top
+  </a>
+
+  <!-- Floating Help Button -->
+  <a href="sms:1-813-666-5708" 
+     style="position: fixed; bottom: 20px; right: 20px; background-color: #00ffe0; color: #000; padding: 12px 20px; border-radius: 30px; font-weight: bold; text-decoration: none; box-shadow: 0 0 15px #00ffe0; z-index: 999;">
+    💬 Need Help?
+  </a>
 
 </body>
 </html>
