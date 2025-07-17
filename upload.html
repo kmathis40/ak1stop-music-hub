@@ -79,28 +79,10 @@
       text-align: center;
     }
 
-    .video-card img {
+    .video-card iframe {
       width: 100%;
-      border-radius: 8px;
-    }
-
-    .video-card p {
-      margin: 10px 0;
-    }
-
-    .watch-btn {
-      display: inline-block;
-      background-color: #00ffe0;
-      color: #000;
-      font-weight: bold;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: 0.3s ease;
-    }
-
-    .watch-btn:hover {
-      background-color: #00ccb0;
+      height: 180px;
+      border-radius: 10px;
     }
 
     iframe.form {
@@ -146,18 +128,24 @@
     <h2>🎬 Featured Submissions</h2>
     <div class="video-grid">
 
-      <!-- Video 1 -->
+      <!-- Embedded Video 1 -->
       <div class="video-card">
-        <img src="https://img.youtube.com/vi/Mk3-pVqyld0/hqdefault.jpg" alt="U Ain’t No Pimp" />
+        <iframe src="https://www.youtube.com/embed/Mk3-pVqyld0?si=WZp3UK91KNVpkX5S" 
+                title="U Ain’t No Pimp"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         <p>🎵 “U Ain’t No Pimp”</p>
-        <a href="https://www.youtube.com/watch?v=Mk3-pVqyld0" target="_blank" class="watch-btn">▶️ Watch Now</a>
       </div>
 
-      <!-- Video 2 -->
+      <!-- Embedded Video 2 -->
       <div class="video-card">
-        <img src="https://img.youtube.com/vi/Va5P_TfbjK8/hqdefault.jpg" alt="Visual Vibe" />
+        <iframe src="https://www.youtube.com/embed/Va5P_TfbjK8?si=Rp9FaqJkjvFMJyKX"
+                title="Visual Vibe"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         <p>🎥 “Visual Vibe”</p>
-        <a href="https://www.youtube.com/watch?v=Va5P_TfbjK8" target="_blank" class="watch-btn">▶️ Watch Now</a>
       </div>
 
     </div>
