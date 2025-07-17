@@ -2,29 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Upload Your Track</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload to PlugHub</title>
   <style>
     body {
       background-color: #000;
       color: #fff;
       font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
       text-align: center;
-      padding: 40px;
     }
-    input, button {
-      padding: 10px;
-      margin-top: 20px;
+
+    header {
+      background: linear-gradient(135deg, #111, #1a1a1a);
+      padding: 50px 20px;
+    }
+
+    h1 {
+      font-size: 42px;
+      color: #00ffe0;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #ccc;
+    }
+
+    section {
+      padding: 30px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    iframe {
+      width: 100%;
+      height: 800px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    footer {
+      padding: 20px;
+      font-size: 14px;
+      color: #666;
     }
   </style>
 </head>
+
 <body>
-  <h1>📬 Upload Your Track</h1>
-  <p>Submit your song to PlugHub.</p>
-  <input type="file" accept="audio/*" />
-  <br><br>
-  <button>Upload</button>
-  <br><br>
-  <a href="index.html">⬅ Back to PlugHub</a>
+  <header>
+    <h1>Upload Your YouTube Video</h1>
+    <p>Be featured on PlugHub — where creators earn, stream, and shine.</p>
+  </header>
+
+  <section>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSctSxF4OHse67kvp5OGiU9Cq1iWjajNMsGZwe6RiUahhtE7XA/viewform?embedded=true" loading="lazy">
+      Loading…
+    </iframe>
+  </section>
+
+  <footer>
+    <p>Powered by Ak1Stop • PlugHub • VetsCoin</p>
+  </footer>
 </body>
 </html>
