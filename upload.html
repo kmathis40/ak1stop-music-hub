@@ -26,13 +26,12 @@
       margin-bottom: 10px;
     }
 
-    p.tagline {
+    p {
       font-size: 18px;
       color: #ccc;
-      margin: 0;
     }
 
-    main {
+    section {
       padding: 40px 20px;
       max-width: 900px;
       margin: 0 auto;
@@ -48,18 +47,33 @@
 
     .back-button {
       display: inline-block;
-      margin-top: 30px;
+      margin: 30px auto;
       background-color: #00ffe0;
       color: #000;
       padding: 12px 24px;
       font-weight: bold;
       border-radius: 8px;
       text-decoration: none;
-      transition: all 0.3s ease;
+      transition: 0.3s ease;
     }
 
     .back-button:hover {
       background-color: #00ccb0;
+    }
+
+    .video-embed {
+      width: 100%;
+      max-width: 640px;
+      height: 360px;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+
+    .social-links a {
+      color: #00ffe0;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     footer {
@@ -76,24 +90,56 @@
 <body>
   <header>
     <h1>🎥 Submit Your YouTube Video</h1>
-    <p class="tagline">
-      Upload your music, content, or message and get featured on PlugHub — where creators stream, earn, and shine with VetsCoin.
-    </p>
+    <p>Be featured on PlugHub — where creators stream, earn, and shine with VetsCoin (VTX).</p>
   </header>
 
-  <main>
-    <p style="color:#ccc; font-size: 18px; margin-bottom: 30px;">
-      We review submissions weekly and highlight the dopest uploads from the community. Submit below to join the movement.
-    </p>
+  <section>
+    <h2 style="color:#00ffe0;">What to Upload:</h2>
+    <p>✅ Music Videos • 🔊 Freestyles • 🎤 Live Performances • 💬 Message to the Community</p>
 
+    <h2 style="color:#00ffe0;">How It Works:</h2>
+    <p>Fill out the form below. We review videos weekly and highlight selected creators on PlugHub.</p>
+  </section>
+
+  <section>
+    <h2 style="color:#00ffe0;">🔥 Featured Example</h2>
+    <div class="video-embed">
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Mk3-pVqyld0" 
+        title="PlugHub Example Video" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="color:#00ffe0;">💸 Why PlugHub Uses VetsCoin (VTX)</h2>
+    <p>VTX is a community crypto built to reward creators, support veterans, and power platforms like PlugHub. When you submit content, you’re not just uploading — you’re becoming part of the movement.</p>
+  </section>
+
+  <section>
+    <h2 style="color:#00ffe0;">📬 Submit Your Video</h2>
     <iframe 
       src="https://docs.google.com/forms/d/e/1FAIpQLSeJqThUZzuzef99eJYH_54KQBbXdHYZepeon7VLejmSHBxGig/viewform?embedded=true" 
       loading="lazy">
       Loading…
     </iframe>
+  </section>
 
-    <a href="index.html" class="back-button">⬅ Back to PlugHub Home</a>
-  </main>
+  <section>
+    <h2 style="color:#00ffe0;">📢 What Creators Are Saying</h2>
+    <p>"I dropped my first video here and already connected with new fans and artists!" – @_RealMike</p>
+    <p>"This platform actually supports the people behind the art. That’s different." – @DJNova</p>
+  </section>
+
+  <section class="social-links">
+    <h2 style="color:#00ffe0;">🔗 Stay Connected</h2>
+    <p>
+      <a href="https://instagram.com/ak1stop" target="_blank">Instagram</a> |
+      <a href="https://x.com/ak1stop" target="_blank">X (Twitter)</a> |
+      <a href="index.html">Back to PlugHub Home</a>
+    </p>
+  </section>
 
   <footer>
     <p>Powered by Ak1Stop • PlugHub • VetsCoin</p>
