@@ -2,46 +2,135 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Claim VTX – PlugHub</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      padding: 20px;
+      background-color: #111;
+    }
+
+    header img {
+      max-width: 200px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      color: #00ffd0;
+      margin-top: 0;
+    }
+
+    h2 {
+      color: #0ff;
+    }
+
+    .section {
+      padding: 30px 15px;
+    }
+
+    .contract {
+      font-family: monospace;
+      background: #222;
+      padding: 10px 15px;
+      border-radius: 5px;
+      margin: 10px auto;
+      display: inline-block;
+      word-wrap: break-word;
+    }
+
+    .btn {
+      background-color: #00ffd0;
+      color: #000;
+      padding: 12px 24px;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 12px;
+    }
+
+    .btn:hover {
+      background-color: #0cf;
+    }
+
+    iframe {
+      border-radius: 12px;
+      margin-top: 10px;
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+    }
+
+    .chat-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #00ffd0;
+      color: black;
+      padding: 12px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 10px #0ff;
+      z-index: 999;
+    }
+
+    footer {
+      font-size: 14px;
+      color: #666;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <h1>📍 Claim Your VetsCoin (VTX)</h1>
-    <p>Support the movement. Claim your airdrop below.</p>
+    <img src="https://ak1stop.com/wp-content/uploads/2024/06/VetsCoin-Logo-Small.png" alt="VetsCoin Logo">
+    <h1>Claim Your VetsCoin (VTX)</h1>
+    <p>Support the movement. Claim your airdrop today.</p>
   </header>
 
-  <main>
-    <section>
-      <h2>🎥 Step 0: Watch This First</h2>
-      <iframe 
-        src="https://drive.google.com/file/d/175bMN939bCL1ZnLlV1P_R9h0XFpy6Zzl/preview" 
-        width="100%" height="360" allow="autoplay"
-        style="border: none; border-radius: 10px;">
-      </iframe>
-    </section>
+  <div class="section">
+    <h2>🎥 Step 0: Watch First</h2>
+    <iframe src="https://drive.google.com/file/d/175bMN939bCL1ZnLlV1P_R9h0XFpy6Zzl/preview" allow="autoplay"></iframe>
+  </div>
 
-    <section>
-      <h2>🔐 Step 1: Set Up Your Wallet</h2>
-      <p>Download <strong>Trust Wallet</strong> from the App Store or Google Play. Make sure it's set to the <strong>Polygon</strong> network.</p>
-    </section>
+  <div class="section">
+    <h2>🔐 Step 1: Get a Wallet</h2>
+    <a href="https://trustwallet.com/download" target="_blank" class="btn">Download Trust Wallet</a>
+    <p>Be sure to switch to the <strong>Polygon Network</strong>.</p>
+  </div>
 
-    <section>
-      <h2>📩 Step 2: Add the VetsCoin Token</h2>
-      <p>Add this contract address to your wallet:</p>
-      <code>0x7AEDCeE86B646635C1d7d3ABA19eC569502C17cF</code>
-    </section>
+  <div class="section">
+    <h2>📩 Step 2: Add VTX to Your Wallet</h2>
+    <p>Use this contract address:</p>
+    <div class="contract">0x7AEDCeE86B646635C1d7d3ABA19eC569502C17cF</div>
+  </div>
 
-    <section>
-      <h2>📝 Step 3: Submit the Claim Form</h2>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSctSxF4OHse67kvp5OGiU9Cq1iWjajNMsGZwe6RiUahhtE7XA/viewform" 
-         target="_blank" 
-         class="btn" 
-         style="display: inline-block; padding: 12px 20px; background: #00f2aa; color: black; border-radius: 6px; font-weight: bold; text-decoration: none;">
-         Submit Claim
-      </a>
-    </section>
-  </main>
+  <div class="section">
+    <h2>📝 Step 3: Submit Claim Form</h2>
+    <a href="https://forms.gle/CnktLg3wCQMyEs5c8" class="btn" target="_blank">Submit Now</a>
+  </div>
+
+  <div class="section">
+    <h2>📞 Questions?</h2>
+    <p>Text us at: <strong>1-813-666-5708</strong></p>
+  </div>
+
+  <a href="sms:+18136665708" class="chat-float">💬 Need Help?</a>
+
+  <footer>
+    &copy; 2025 Ak1Stop x VetsCoin. All rights reserved.
+  </footer>
+
 </body>
 </html>
