@@ -3,141 +3,169 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Claim Your VTX – Powered by Ak1Stop</title>
+  <title>Claim Your VTX | VetsCoin Airdrop</title>
   <style>
     body {
-      margin: 0;
+      background-color: #0a0a0a;
+      color: #fff;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #111;
-      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
     }
-    .container {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background: #1e1e1e;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    }
-    h1 {
+
+    header {
+      background: #111;
+      padding: 40px 20px;
       text-align: center;
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-      color: #00ffcc;
+      border-bottom: 2px solid #00ffe0;
     }
-    .step {
-      background-color: #2c2c2c;
-      border-radius: 10px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
+
+    h1 {
+      color: #00ffe0;
+      font-size: 36px;
+      margin-bottom: 10px;
     }
-    .step h2 {
-      margin-top: 0;
-      font-size: 1.4rem;
-      color: #00ccff;
+
+    p {
+      color: #ccc;
+      font-size: 18px;
+      margin: 10px 0;
     }
-    .button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 12px 20px;
-      background-color: #00cc88;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 6px;
+
+    main {
+      padding: 30px 20px;
+      max-width: 800px;
+      margin: auto;
     }
+
     iframe {
       width: 100%;
-      height: 500px;
+      max-width: 720px;
+      height: 405px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    .step-box {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    .step-box h2 {
+      color: #00ffe0;
+      font-size: 22px;
+    }
+
+    code {
+      background-color: #000;
+      padding: 6px 8px;
+      display: inline-block;
+      border-radius: 6px;
+      word-break: break-all;
+    }
+
+    .copy-btn {
+      background-color: #00ffe0;
+      color: #000;
+      font-weight: bold;
+      padding: 10px 16px;
       border: none;
-      border-radius: 10px;
-      margin-top: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
     }
-    .guide {
-      background: #292929;
-      padding: 1rem;
-      border-radius: 10px;
-      font-size: 0.95rem;
-      line-height: 1.6;
-      white-space: pre-wrap;
+
+    .copy-btn:hover {
+      background-color: #00ccb0;
     }
+
+    iframe.google-form {
+      height: 800px;
+      border: none;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin-top: 40px;
+      padding: 20px;
+      border-top: 1px solid #333;
+    }
+
     .chat-button {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: #00ccff;
-      color: #fff;
-      padding: 12px 16px;
-      border-radius: 20px;
+      background-color: #00ffe0;
+      color: #000;
+      padding: 12px 18px;
+      border-radius: 30px;
       font-weight: bold;
       text-decoration: none;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      box-shadow: 0 0 10px #00ffe0;
     }
-    @media (max-width: 600px) {
-      .container {
-        margin: 1rem;
-        padding: 1rem;
-      }
-      iframe {
-        height: 400px;
-      }
+
+    .chat-button:hover {
+      background-color: #00ccb0;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>🎖️ Claim Your VTX – Powered by Ak1Stop</h1>
 
-    <div class="step">
-      <h2>Step 1: Watch the Intro Video</h2>
+  <header>
+    <h1>Claim Your VTX</h1>
+    <p>Start your journey. Powered by Ak1Stop + VetsCoin 💥</p>
+  </header>
+
+  <main>
+
+    <div class="step-box">
+      <h2>Step 1: Watch This First</h2>
       <iframe src="https://drive.google.com/file/d/175bMN939bCL1ZnLlV1P_R9h0XFpy6Zzl/preview" allow="autoplay"></iframe>
     </div>
 
-    <div class="step">
-      <h2>Step 2: Fill Out the Claim Form</h2>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSctSxF4OHse67kvp5OGiU9Cq1iWjajNMsGZwe6RiUahhtE7XA/viewform?embedded=true">Loading…</iframe>
+    <div class="step-box">
+      <h2>Step 2: Add VTX to Your Wallet</h2>
+      <p>Network: Polygon</p>
+      <p>Contract Address:</p>
+      <code id="contract">0x7AEDCeE86B646635C1d7d3ABA19eC569502C17cF</code>
+      <p>Symbol: VTX</p>
+      <p>Decimals: 18</p>
+      <button class="copy-btn" onclick="copyContract()">📋 Copy Contract</button>
     </div>
 
-    <div class="step">
-      <h2>Step 3: Share with Friends</h2>
-      <p>Earn bonus VTX for every verified referral. Share your Trust Wallet address and let your friends know about VetsCoin!</p>
-      <a class="button" href="https://ak1stop.cloud/vtx-referral" target="_blank">Referral Bonus Info</a>
+    <div class="step-box">
+      <h2>Step 3: Submit Your Claim Form</h2>
+      <iframe class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSeJqThUZzuzef99eJYH_54KQBbXdHYZepeon7VLejmSHBxGig/viewform?embedded=true">Loading…</iframe>
     </div>
 
-    <div class="step guide">
-      <h2>📘 VetsCoin (VTX) Airdrop & Claim Guide</h2>
-      Step 1: Download and Set Up Your Wallet
-      • Download Trust Wallet or MetaMask from the App Store or Google Play.
-      • Create a new wallet and safely store your recovery phrase.
-      • Open your wallet and switch to the Polygon network (add manually if needed).
-
-      Step 2: Add VetsCoin (VTX) to Your Wallet
-      • Network: Polygon
-      • Contract Address: 0x7AEDCeE86B646635C1d7d3ABA19eC569502C17cF
-      • Name: VetsCoin
-      • Symbol: VTX
-      • Decimals: 18
-
-      Step 3: Fill Out the Claim Form
-      Visit the official VTX Claim Page or App and submit the form with:
-      • Full Name
-      • Email Address
-      • Polygon Wallet Address
-      • (Optional) Referral Name
-      • Agree to terms & submit
-
-      Step 4: Earn Extra VTX
-      • Get $25 in VTX for joining the movement.
-      • Earn more by referring friends who complete a claim.
-      • Bonus VTX available for early adopters and buyers.
-
-      How to Buy and Cash Out VTX
-      • Use QuickSwap to buy VTX with MATIC.
-      • Add VTX to Trust Wallet.
-      • Transfer to Crypto.com wallet to cash out using your card.
+    <div class="step-box">
+      <h2>Step 4: Invite a Friend + Get Bonus VTX</h2>
+      <p>Once you're in, help someone else set up their wallet and claim too.</p>
+      <p>You’ll both get bonus VTX 💸</p>
     </div>
+
+  </main>
+
+  <div class="footer">
+    © 2025 Ak1Stop • Powered by VetsCoin (VTX)<br/>
+    This is a utility platform — not a trading exchange. Contact us for help anytime.
   </div>
 
-  <a class="chat-button" href="sms:+18136665708">💬 Need Help?</a>
+  <a class="chat-button" href="https://wa.me/18136665708" target="_blank">💬 Help?</a>
+
+  <script>
+    function copyContract() {
+      const contract = document.getElementById('contract').textContent;
+      navigator.clipboard.writeText(contract).then(() => {
+        alert("VTX contract address copied!");
+      });
+    }
+  </script>
+
 </body>
 </html>
